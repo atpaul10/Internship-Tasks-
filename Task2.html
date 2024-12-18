@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Data into Table</title>
+    <link rel="stylesheet" href="Task2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <div class="formValidation">
+            <form id="formid">
+
+                <!-- FirstName -->
+                <label for="FirstName">First Name</label>
+                <input type="text" placeholder="Enter Your Name" id="FirstName"> <br><br>
+                <div class="error" id="FirstNameError">First name is required!</div>
+
+                <!-- LastName -->
+                <label for="LastName"> Last Name </label>
+                <input type="text" placeholder="Enter Your Last Name " id="LastName"><br><br>
+                <div class="error" id="LastNameError">Last name is required!</div>
+
+                <!-- phone number -->
+                <label for="Number"> Phone Number</label>
+                <input type="text" placeholder="Enter Your Phone Number" id="Number"> <br><br>
+                <div class="error" id="PhoneNumberError">Phone Number is required!</div>
+
+                <!-- gender -->
+                <label for="Gender">Gender</label>
+                <select name="Gender" id="selectionid">
+                    <option value="Male">Male</option>
+                    <option value="Female"> Female</option>
+                </select><br><br>
+                <div class="error" id="GenderError">Please select your gender!</div>
+
+                <!-- address -->
+                <label for="address"> Address</label>
+                <textarea name="address" id="Address" placeholder="Enter Your Address"></textarea><br><br>
+                <div class="error" id="AddressError">Address is required!</div>
+
+                <!-- date -->
+                <label for="Date"> Date of Birth</label>
+                <input type="date" id="Date"> <br><br>
+                <div class="error" id="DateError">Date of Birth is required!</div>
+
+                <!-- professional -->
+                <label for="professional Detail"> Professional Detail</label>
+                <input type="file" id="filetype"> <br><br>
+                <div class="error" id="FileError">Please upload a file!</div>
+
+                <!-- title -->
+                <label for="title"> Title</label>
+                <input type="text" placeholder="Title" id="Title"><br><br>
+                <div class="error" id="TitleError">Title is required!</div>
+
+                <!-- Experience -->
+                <label for="Experience"> Experience</label>
+                <textarea id="Experience" placeholder="Enter Your Experience"></textarea><br><br>
+                <div class="error" id="ExperienceError">Experience is required!</div>
+
+                <button type="button" id="submitBtn">Submit Form</button>
+            </form>
+        </div> 
+    </div>
+
+    <div class="data">
+        <h2>Submited Data</h2>
+        <table id="dataTable" class="show">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Date Of Birth</th>
+                    <th>Professional Detail</th>
+                    <th>Title</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+<script src="Task2.js"></script>
+</html>

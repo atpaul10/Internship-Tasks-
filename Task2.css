@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+    flex-direction: column;
+}
+
+h1 {
+    color: #af4d98;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 2rem;
+    min-height: 45vh
+    
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+input,
+textarea,
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    border: 1px solid rgb(162, 160, 157);
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+}
+
+form button {
+    height: 3rem;
+    background-color: #af4d98;
+    color: aliceblue;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #9d0078;
+}
+
+textarea {
+    height: 2.5rem;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(162, 160, 157);
+    resize: none;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    display: none;
+}
+
+#selection {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#selectionid {
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid rgb(162, 160, 157);
+    border-radius: 0.75rem;
+    appearance: none;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    padding: 8px;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(162, 160, 157);
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse:collapse ;
+    background-color: #f4eddb;
+}
+
+table th,table td{
+    padding: 8px;
+    border: 2px solid rgb(122, 13, 89);
+    text-align: left;
+    color: #9d0078;
+}
+table th{
+    background-color: #f4eddb;
+}
+
